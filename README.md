@@ -14,3 +14,25 @@ int main() {
 	result = 20;
 	cout << "\n\t" << endl << result;
 } 
+#just a simple code:
+#include <iostream>
+using namespace std;
+int main() {
+	string Name = "Abdelkader";
+	int Age = 17 ;
+	string City = "Bejaia";
+	string Country = "Algeria";
+	int Monthly_Salary = 0000;
+	int YEARLY_SALARY = 1000;
+	char Gender = 'M';
+	bool Married = false;
+	//print:
+	cout << "Name: " << Name << endl;
+	cout << "Age: " << Age << " Years old" << endl;
+	cout << "City: " << City << endl;
+	cout << "Country: " << Country << endl;
+	cout << "Monthly_Salary: " << Monthly_Salary << endl;
+	cout << "Yearly salary: " << YEARLY_SALARY << endl;
+	cout << "Gender: " << Gender << endl;
+	cout << "Married: " << Married << endl;
+}
