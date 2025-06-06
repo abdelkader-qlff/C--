@@ -134,4 +134,14 @@ int main() {
 }
 
 
+#simple code:
 
+#include <iostream>
+using namespace std;
+int main() {
+	int originalage;
+	cout << "what is your age: ";
+	cin >> originalage;
+	int after5years = originalage + 5;
+	cout << "after 5 years you will be " << after5years << " years old.";
+}
