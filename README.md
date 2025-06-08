@@ -167,6 +167,18 @@ int main() {
 	cout << "enter the first mark: ";
 	cin >> mark1;
 	cout << "enter the second mark: ";
+
+ #14:
+ #include <iostream>
+using namespace std;
+int main() {
+	int number1, number2;
+	cout << "enter your first number: ";
+	cin >> number1;
+	cout << "enter your second number: ";
+	cin >> number2;
+	cout << number1 << endl << number2 << endl << endl << number2 << endl << number1;
+}
 	cin >> mark2;
 	cout << "enter the thrid mark: ";
 	cin >> mark3;
