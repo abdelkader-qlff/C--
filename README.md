@@ -145,3 +145,16 @@ int main() {
 	int after5years = originalage + 5;
 	cout << "after 5 years you will be " << after5years << " years old.";
 }
+
+
+ #حلول سلسلة الخوارزميات بلغة C++:
+ 
+#7:
+#include <iostream>
+using namespace std;
+int main() {
+	int number;
+	cout << "enter the number that you need to get his half: ";
+	cin >> number;
+	cout << "Half of the " << number << " is: " << number / 2;
+}
