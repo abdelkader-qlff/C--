@@ -158,3 +158,18 @@ int main() {
 	cin >> number;
 	cout << "Half of the " << number << " is: " << number / 2;
 }
+
+#10:
+#include <iostream>
+using namespace std;
+int main() {
+	int mark1, mark2, mark3 , average;
+	cout << "enter the first mark: ";
+	cin >> mark1;
+	cout << "enter the second mark: ";
+	cin >> mark2;
+	cout << "enter the thrid mark: ";
+	cin >> mark3;
+	average = (mark1 + mark2 + mark3) / 3;
+	cout << "average of entered marks is: " << average;
+}
