@@ -149,7 +149,7 @@ int main() {
 
  #حلول سلسلة الخوارزميات بلغة C++:
  
-#7:
+#7-HALF NUMBER:
 #include <iostream>
 using namespace std;
 int main() {
@@ -159,7 +159,7 @@ int main() {
 	cout << "Half of the " << number << " is: " << number / 2;
 }
 
-#10:
+#10-AVERAGE OF THREE MARKS:
 #include <iostream>
 using namespace std;
 int main() {
@@ -168,7 +168,7 @@ int main() {
 	cin >> mark1;
 	cout << "enter the second mark: ";
 
- #14:
+ #14-SWAP NUMBER:
  #include <iostream>
 using namespace std;
 int main() {
@@ -184,4 +184,17 @@ int main() {
 	cin >> mark3;
 	average = (mark1 + mark2 + mark3) / 3;
 	cout << "average of entered marks is: " << average;
+}
+
+#15-RECTANGLE AREA:
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, area;
+	cout << "enter the length of rectangle: ";
+	cin >> a;
+	cout << "enter the width of rectangle: ";
+	cin >> b;
+	area = a * b;
+	cout << "the area of rectangle is: " << area;
 }
