@@ -225,3 +225,15 @@ int main() {
 	cout << "the Circle Area Through Diameter is: " << area;
 }
 
+
+#21-THE CIRCLE AREA ALONG THE CRCUFERENCE:
+#include <iostream>
+using namespace std;
+int main() {
+	int l;
+	float const PI = 3.14;
+	cout << "enter l: ";
+	cin >> l;
+	float area = (l * l) / (4 * PI);
+	cout << "the Circle Area Along the Circumference is: " << area;
+}
