@@ -213,3 +213,15 @@ int main() {
 }
 
 
+#20-THE CIRCLE AREA:
+#include <iostream>
+using namespace std;
+int main() {
+	int A;
+	float const PI = 3.14;
+	cout << "enter A: ";
+	cin >> A;
+	float area = PI * ((A/2)*(A/2));
+	cout << "the Circle Area Through Diameter is: " << area;
+}
+
