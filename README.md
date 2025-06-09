@@ -237,3 +237,18 @@ int main() {
 	float area = (l * l) / (4 * PI);
 	cout << "the Circle Area Along the Circumference is: " << area;
 }
+
+
+#22-THE CIRCLE AREA INSCRIBED IN AN ISOSCELES TRIANGLE:
+#include <iostream>
+using namespace std;
+int main() {
+	float a, b;
+	const float PI = 3.14;
+	cout << "enter a: ";
+	cin >> a;
+	cout << "enter b: ";
+	cin >> b;
+	float area = (PI)*((b*b)/4)*((2*a-b)/(2*a+b));
+	cout << "the Circle Area Inscribed in an Isosceles Triangle is: " << area;
+}
