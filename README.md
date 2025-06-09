@@ -198,3 +198,18 @@ int main() {
 	area = a * b;
 	cout << "the area of rectangle is: " << area;
 }
+
+#17-TRIANGLE AREA:
+#include <iostream>
+using namespace std;
+int main() {
+	int a, h, area;
+	cout << "enter a: ";
+	cin >> a;
+	cout << "enter h: ";
+	cin >> h;
+	area = (a / 2 ) * h;
+	cout << "the triangle area is: " << area;
+}
+
+
