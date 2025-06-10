@@ -285,3 +285,17 @@ int main() {
 	int number4 = number * number * number * number;
 	cout << number2 << endl << number3 << endl << number4 << endl;
 }
+
+
+#39-PAY REMAINDER:
+#include <iostream>
+using namespace std;
+int main() {
+	int totalbill, cashpaid, paidback;
+	cout << "enter the totalbill: ";
+	cin >> totalbill;
+	cout << "enter the cashpaid: ";
+	cin >> cashpaid;
+	paidback = cashpaid - totalbill;
+	cout << "paid back is: " << paidback;
+}
