@@ -273,4 +273,15 @@ int main() {
 }
 
 
-31-:
+31-POWER OF 2,3,4:
+#include <iostream>
+using namespace std;
+int main() {
+	int number;
+	cout << "enter your number: ";
+	cin >> number;
+	int number2 = number * number;
+	int number3 = number * number * number;
+	int number4 = number * number * number * number;
+	cout << number2 << endl << number3 << endl << number4 << endl;
+}
