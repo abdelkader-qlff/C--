@@ -347,7 +347,8 @@ int main() {
 		int secondtohour = totalseconds / (60 * 60);
 		totalseconds %= (60 * 60);
 		int secondtominute = totalseconds / 60;
-		seconds = totalseconds % 60;
+		totalseconds %= 60;
+		seconds = totalseconds;
 		cout << secondtoday << " days" << endl << secondtohour << " hours" << endl << secondtominute << " minutes" << endl << seconds << " seconds";
 	}
 
