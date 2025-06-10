@@ -299,3 +299,19 @@ int main() {
 	paidback = cashpaid - totalbill;
 	cout << "paid back is: " << paidback;
 }
+
+
+#40-SERVICE FEE AND SALES TAX:
+#include <iostream>
+	using namespace std;
+int main() {
+	float billvalue, services_fee, sales_tax, total_price;
+	cout << "enter the bill value: ";
+	cin >> billvalue;
+	services_fee = (10 * billvalue) / 100;
+	sales_tax = (16 * billvalue) / 100;
+	total_price = billvalue + services_fee + sales_tax;
+	cout << "the total price is: " << total_price;
+} 
+
+
