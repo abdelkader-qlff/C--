@@ -315,3 +315,24 @@ int main() {
 } 
 
 
+42-THE DURATION IN SECONDS:
+#include <iostream>
+	using namespace std;
+int main() {
+	int seconds, minutes, hours, days;
+	cout << "how much of days: ";
+	cin >> days;
+	int daytosecond = days * 24 * 60 * 60;
+	cout << "how much of hours: ";
+	cin >> hours;
+	int hourtosecond = hours * 60 * 60;
+	cout << "how much of minutes: ";
+	cin >> minutes;
+	int minutetosecond = minutes * 60;
+	cout << "how much of seconds: ";
+	cin >> seconds;
+	int total_seconds = seconds + daytosecond + hourtosecond + minutetosecond;
+	cout << "the total srconds is: " << total_seconds;
+} 
+
+
