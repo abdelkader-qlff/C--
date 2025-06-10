@@ -252,3 +252,25 @@ int main() {
 	float area = (PI)*((b*b)/4)*((2*a-b)/(2*a+b));
 	cout << "the Circle Area Inscribed in an Isosceles Triangle is: " << area;
 }
+
+
+#30-TRYING IN THE LOOP LESSON:
+#include <iostream>
+using namespace std;
+int main() {
+	int number, counter;
+	int factorial = 1;
+	cout << "enter your number: ";
+	cin >> number;
+	if (number >= 0) {
+		counter = number + 1;
+		counter = counter - 1;
+		factorial = factorial * counter;
+		if (counter == 1) {
+			cout << factorial;
+		}
+	}
+}
+
+
+31-:
