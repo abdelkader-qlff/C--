@@ -367,5 +367,15 @@ int main() {
 }
 
 
-#48-:
-
+#48-MONTHLY LOAN INSTALMENT:
+#include <iostream>
+using namespace std;
+int main() {
+	int loanamoun, monthlypayment, months;
+	cout << "enter the the total price: ";
+	cin >> loanamoun;
+	cout << "enter your monthly payment: ";
+	cin >> months;
+	monthlypayment = loanamoun / months;
+	cout << "the monthly instalment amount is: " << monthlypayment;
+}
