@@ -315,7 +315,7 @@ int main() {
 } 
 
 
-42-THE DURATION IN SECONDS:
+#42-THE DURATION IN SECONDS:
 #include <iostream>
 	using namespace std;
 int main() {
@@ -336,3 +336,20 @@ int main() {
 } 
 
 
+#43-SECONDS TO DAYS,HOURS,MINUTES:
+#include <iostream>
+	using namespace std;
+	int main() {
+		int seconds = 0;
+		int totalseconds = 193535;
+		int secondtoday = totalseconds / (24 * 60 * 60);
+		totalseconds %= (24 * 60 * 60);
+		int secondtohour = totalseconds / (60 * 60);
+		totalseconds %= (60 * 60);
+		int secondtominute = totalseconds / 60;
+		seconds = totalseconds % 60;
+		cout << secondtoday << " days" << endl << secondtohour << " hours" << endl << secondtominute << " minutes" << endl << seconds << " seconds";
+	}
+
+
+ 
