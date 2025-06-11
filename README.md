@@ -379,3 +379,16 @@ int main() {
 	monthlypayment = loanamoun / months;
 	cout << "the monthly instalment amount is: " << monthlypayment;
 }
+
+
+#Increment Decrement Operators: ++, --:
+
+#include <iostream>
+using namespace std;
+int main() {
+	int A = 10, B = 20;
+	A++; // ++A.;
+	B--; // --B;
+	cout << "A = " << A << endl;
+	cout << "B = " << B << endl;
+}
