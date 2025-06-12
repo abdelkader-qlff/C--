@@ -428,3 +428,27 @@ int main() {
 	cout << A << " >= " << B << " is " << (A >= B) << endl;
 	return 0;
 }
+
+
+#TRAINING ON FUNCTIONS(not !;and &&;or ||):
+#include <iostream>
+using namespace std;
+int main() {
+	cout << (12 >= 12) << endl;
+	cout << !(12 >= 12) << endl;
+	cout << (1 && 1) << endl;
+	cout << ((7 == 7) && (7 > 5)) << endl;
+	cout << (12 > 7) << endl;
+	cout << !(12 < 7) << endl;
+	cout << (1 && 0) << endl;
+	cout << ((7 == 7) && (7 < 5)) << endl;
+	cout << (0 || 1) << endl;
+	cout << (0 || 0) << endl;
+	cout << !(0) << endl;
+	cout << !(1 || 0) << endl;
+	cout << ((7 < 7) || (7 > 5)) << endl;
+	cout << ((7 == 7) && !(7 < 5));
+}
+
+
+#
