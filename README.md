@@ -536,3 +536,48 @@ int main() {
 	float area = PI * (pow(b, 2) / 4) * ((2 * a - b) / (2 * a + b));
 	cout << "The Circle Area Inscribed in an Isosceles Triangle: " << floor(area);
 }
+
+
+#23-Circle Area circle Described Around an Arbitrary Triangle:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	float a, b, c;
+	const float PI = 3.14;
+	cout << "enter a: ";
+	cin >> a;
+	cout << "enter b: ";
+	cin >> b;
+	cout << "enter c: ";
+	cin >> c;
+	int p = (a + b + c) / 2;
+	float area = PI * pow(((a * b * c) / (4 * sqrt(p * (p - a) * (p - b) * (p - c)))), 2);
+	cout << "The Circle Area circle Described Around an Arbitrary Triangle: " << round(area);
+}
+
+
+#31-Pwer of 2,3,4:
+#include <iostream>
+using namespace std;
+int main() {
+	int number;
+	cout << "enter your number: ";
+	cin >> number;
+	cout << pow(number, 2) << endl << pow(number, 3) << endl << pow(number, 4) << endl;
+}
+
+
+#32-Power of M:
+#include <iostream>
+using namespace std;
+int main() {
+	int number, M;
+	cout << "enter your number: ";
+	cin >> number;
+	cout << "enter M: ";
+	cin >> M;
+	cout << pow(number, M) << endl;
+}
+
+
