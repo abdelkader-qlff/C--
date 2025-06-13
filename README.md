@@ -476,7 +476,63 @@ int main() {
 	cout << "enter r: ";
 	cin >> r;
 	float area = PI * pow(r, 2);
-	cout << "The Rectangle area Through Diagonal and Side Area: " << ceil(area);
+	cout << "The Circle Area: " << ceil(area);
 }
 
 
+#19-CIRCLE AREA THROUGH DIAMETER:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int D;
+	const float PI = 3.14;
+	cout << "enter D: ";
+	cin >> D;
+	float area = ceil((PI * pow(D, 2)) / 4);
+	cout << "The CIRCLE AREA THROUGH DIAMETER: " << area;
+}
+
+
+#20-Circle Area Inscribed in a Square:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int A;
+	const float PI = 3.14;
+	cout << "enter A: ";
+	cin >> A;
+	float area = ceil((PI * pow(A, 2)) / 4);
+	cout << "The Circle Area Inscribed in a Square: " << area;
+}
+
+
+#21- Circle Area Along the Circumference:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int l;
+	const float PI = 3.14;
+	cout << "enter l: ";
+	cin >> l;
+	float area = pow(l, 2) / (4 * PI);
+	cout << "The Circle Area Along the Circumference: " << floor(area);
+}
+
+
+#22-Circle Area Inscribed in an Isosceles Triangle:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	float a, b;
+	const float PI = 3.14;
+	cout << "enter a: ";
+	cin >> a;
+	cout << "enter b: ";
+	cin >> b;
+	float area = PI * (pow(b, 2) / 4) * ((2 * a - b) / (2 * a + b));
+	cout << "The Circle Area Inscribed in an Isosceles Triangle: " << floor(area);
+}
