@@ -464,3 +464,19 @@ int main() {
 	float area = a * sqrt(pow(d, 2) - pow(a, 2));
 	cout << "The Rectangle area Through Diagonal and Side Area: " << area;
 }
+
+
+#18-CIRCLE AREA:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int r;
+	const float PI = 3.14;
+	cout << "enter r: ";
+	cin >> r;
+	float area = PI * pow(r, 2);
+	cout << "The Rectangle area Through Diagonal and Side Area: " << ceil(area);
+}
+
+
