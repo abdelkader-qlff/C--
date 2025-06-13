@@ -451,4 +451,16 @@ int main() {
 }
 
 
-#
+#16-Rectangle area Through Diagonal and Side Area:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int a, d;
+	cout << "enter a: ";
+	cin >> a;
+	cout << "enter d: ";
+	cin >> d;
+	float area = a * sqrt(pow(d, 2) - pow(a, 2));
+	cout << "The Rectangle area Through Diagonal and Side Area: " << area;
+}
