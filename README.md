@@ -581,3 +581,34 @@ int main() {
 }
 
 
+#Structures:
+#include <iostream>
+using namespace std;
+struct friends {
+	int age;
+	string name;
+	char firstletter;
+};
+
+int main() {
+	friends myfriend1, myfriend2;
+
+	myfriend1.age = 17;
+	myfriend1.name = "abdelkader";
+	myfriend1.firstletter = 'A';
+
+	cout << " \" " << myfriend1.name << " \" " << myfriend1.age << " \" " << myfriend1.firstletter << " \" " << endl;
+
+	
+	cout << "what is his name: ";
+	cin >> myfriend2.name;
+	cout << "what is your friend's age: ";
+	cin >> myfriend2.age;
+	cout << "what is the first word in his name: ";
+	cin >> myfriend2.firstletter;
+
+	cout << "informations data of your friend " << myfriend2.name << " is: " << endl;
+	cout << "name: " << myfriend2.name << endl;
+	cout << "age: " << myfriend2.age << endl;
+	cout<< "first word in his name: " << myfriend2.firstletter << endl;
+}
