@@ -630,3 +630,62 @@ int main() {
 }
 
 
+#Nested Structures and Enums - Full Practical Example:
+#include <iostream>
+using namespace std;
+
+enum engender { male = 'M', female = 'F' };
+enum enmarried { NO , YES };
+enum encolor { red = 1, blue , black };
+
+struct stAddress {
+	string streetname;
+	string pobox;
+	string zipcode;
+};
+
+struct stcontact {
+	string phone;
+	string email;
+	stAddress address;
+};
+
+struct stinfoperson{
+	string fullname;
+	short int age;
+
+	stcontact contact;
+
+	enmarried married;
+	engender gender;
+	encolor color;
+
+};
+
+int main() {
+	stinfoperson person1;
+	person1.fullname = "anane abdelkader";
+	person1.age = 17;
+
+	person1.contact.address.streetname = "kazirna";
+	person1.contact.address.pobox = "0600";
+	person1.contact.address.zipcode = "0001";
+	person1.contact.email = "abdelkader20085@gmail.com";
+	person1.contact.phone = "+213776459813";
+
+	person1.gender = engender::male;
+	person1.married = enmarried::NO;
+	person1.color = encolor::black;
+
+	cout << "Name: " << person1.fullname << endl;
+	cout << "Age: " << person1.age << endl;
+	cout << "Street Name: " << person1.contact.address.streetname << endl;
+	cout << "PoBox: " << person1.contact.address.pobox << endl;
+	cout << "Zip Code: " << person1.contact.address.zipcode << endl;
+	cout << "E-mail: " << person1.contact.email << endl;
+	cout << "Phone Number: " << person1.contact.phone << endl;
+	
+	cout << "Gender: " << (char)person1.gender << endl;
+	cout << "Married: " << person1.married << endl;
+	cout << "Favourite Color: " << person1.color << endl;
+}
