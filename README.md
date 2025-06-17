@@ -689,3 +689,32 @@ int main() {
 	cout << "Married: " << person1.married << endl;
 	cout << "Favourite Color: " << person1.color << endl;
 }
+
+
+#Data Type Conversion
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	//float to intiger
+	double float_num = 18.99;
+	int int_num = (int)float_num;
+	cout << "float to intiger: " << int_num << endl;
+
+	//string and float(stof) to intiger
+	string name = "123";
+	string f_num = "15.25";
+	int str_to_int = stoi(name);
+	int str_to_float = stof(f_num);//stod() if it is a double
+	cout << "string to intiger: " << str_to_int << endl;
+	cout << "float to intiger: " << str_to_float << endl;
+
+	//intiger and float to string
+	int num1 = 123;
+	double num2 = 18.99;
+	string ST1, ST2;
+	ST1 = to_string(num1);
+	ST2 = to_string(num2);
+	cout << "intiger to string: " << ST1 << endl;
+	cout << "float to string: " << ST2 << endl;
+}
