@@ -599,7 +599,6 @@ int main() {
 
 	cout << " \" " << myfriend1.name << " \" " << myfriend1.age << " \" " << myfriend1.firstletter << " \" " << endl;
 
-	
 	cout << "what is his name: ";
 	cin >> myfriend2.name;
 	cout << "what is your friend's age: ";
@@ -612,3 +611,22 @@ int main() {
 	cout << "age: " << myfriend2.age << endl;
 	cout<< "first word in his name: " << myfriend2.firstletter << endl;
 }
+
+
+#Enums:
+#include <iostream>
+using namespace std;
+enum gender { male = 'M', female = 'F' };
+enum married { NO , YES };
+enum color { red = 1, blue , black };
+
+int main() {
+	gender mygender = gender::male;
+	married mymarried = married::NO;
+	color mycolor = color::black;
+	cout << "Gender: " << (char)mygender << endl;
+	cout << "Married: " << mymarried << endl;
+	cout << "favourite color: " << mycolor << endl;
+}
+
+
