@@ -718,3 +718,27 @@ int main() {
 	cout << "intiger to string: " << ST1 << endl;
 	cout << "float to string: " << ST2 << endl;
 }
+
+
+#
+#include<iostream>
+#include <string>
+using namespace std;
+int main() {
+	string string1, string2, string3;
+	cout << "enter string1: " << endl;
+	getline(cin, string1);
+	cout << "the length of string1 is: " << string1.length() << endl;
+	cout << "characters at 0,2,4,7 are: " << string1[0] << " " << string1[2] << " " << string1[4] << " " << string1[7] << endl;
+	cout << "please enter string2: ";
+	cin >> string2;
+	cout << "please enter string3: ";
+	cin >> string3;
+	string connection = string2 + string3;
+	cout << "concatenating string2 and string3: " << connection << endl;
+	int beating = stoi(string2) * stoi(string3);
+	cout << string2 << " * " << string3 << " = " << beating;
+}
+
+
+#
