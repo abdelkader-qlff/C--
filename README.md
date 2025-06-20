@@ -794,11 +794,14 @@ int main() {
 #include <string>
 using namespace std;
 int main() {
+	int age;
 	string name;
+	cout << "enter your age:";
+	cin >> age;
 	cout << "enter your name: ";
+	cin.ignore(1, '\n');
 	getline(cin, name);
-	cout << "your name is: " << name;
-	
+	cout << "age: " << age << endl << "your name is: " << name << endl;
 	return 0;
 }
 
