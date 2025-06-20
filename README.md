@@ -46,7 +46,6 @@ int main() {
 
 
 #the big code that i am do at c++ even now:
-
 #include <iostream>
 using namespace std;
 int main() {
