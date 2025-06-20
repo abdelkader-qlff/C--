@@ -740,4 +740,66 @@ int main() {
 }
 
 
-#
+#functions://void
+#include <iostream>
+using namespace std;
+void desplay_mycart_info() {
+	string Name = "Abdelkader";
+	int Age = 17;
+	string City = "Bejaia";
+	string Country = "Algeria";
+	int Monthly_Salary = 0000;
+	int YEARLY_SALARY = 1000;
+	char Gender = 'M';
+	bool Married = false;
+	//print:
+	cout << "Name: " << Name << endl;
+	cout << "Age: " << Age << " Years old" << endl;
+	cout << "City: " << City << endl;
+	cout << "Country: " << Country << endl;
+	cout << "Monthly_Salary: " << Monthly_Salary << endl;
+	cout << "Yearly salary: " << YEARLY_SALARY << endl;
+	cout << "Gender: " << Gender << endl;
+	cout << "Married: " << Married << endl;
+}
+void print_square_stars() {
+	cout << "*********************" << endl;
+}
+void space() {
+	cout << "\n";
+}
+void word_H() {
+	cout << "*    *" << endl;
+	cout << "*    *" << endl;
+	cout << "******" << endl;
+	cout << "*    *" << endl;
+	cout << "*    *" << endl;
+}
+
+
+int main() {
+	desplay_mycart_info();
+	space();
+	print_square_stars();
+	print_square_stars();
+	print_square_stars();
+	print_square_stars();
+	space();
+	word_H();
+}
+
+
+#getline:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	string name;
+	cout << "enter your name: ";
+	getline(cin, name);
+	cout << "your name is: " << name;
+	
+	return 0;
+}
+
+
