@@ -740,7 +740,8 @@ int main() {
 }
 
 
-#functions://void
+#functions:
+*part1-procedures(void)
 #include <iostream>
 using namespace std;
 void desplay_mycart_info() {
@@ -787,6 +788,38 @@ int main() {
 	space();
 	word_H();
 }
+
+*part2-(return)
+#include <iostream>
+using namespace std;
+//void MySum() {
+//	int number1, number2, sum;
+//cout << "enter the first number: " << endl;
+//cin >> number1;
+//cout << "enter the second number: " << endl;
+//cin >> number2;
+//	sum = number1 + number2;
+//	cout << "************************" << endl;
+//	cout << sum;
+// }
+//int main() {
+//	MySum();
+//}
+
+int MySum() {
+	int number1, number2;
+	cout << "enter the first number: " << endl;
+	cin >> number1;
+	cout << "enter the second number: " << endl;
+	cin >> number2;
+	cout << "************************" << endl;
+	return number1 + number2;
+}
+int main() {
+	int result = MySum();
+	cout << result;
+}
+
 
 
 #getline:
