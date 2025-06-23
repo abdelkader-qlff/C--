@@ -839,3 +839,23 @@ int main() {
 }
 
 
+#Variable Scope/ Local vs Global Variables:
+#include <iostream>
+#include <string>
+using namespace std;
+int a = 10;  //global value
+float b = 0.15;  //global value
+void num1() {
+	int a = 111;
+	cout << a;
+	cout << endl << ::a << endl;
+}
+int main() {
+	cout << ::b << endl;
+	double b = 0.177;
+	cout << b << endl;
+	num1();
+	::a = 11;
+	float result = ::b + ::a;
+	cout << result << endl;
+}
