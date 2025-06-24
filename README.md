@@ -859,3 +859,27 @@ int main() {
 	float result = ::b + ::a;
 	cout << result << endl;
 }
+
+
+# Function Parameters - By-Val vs By-Ref:
+#include <iostream>
+using namespace std;
+void swap(int &A, int &B) {
+	int temp = A;
+	A = B;
+	B = temp;
+	cout << "after the swap: A =" << A << ", B =" << B << endl;
+}
+int main() {
+	int A, B;
+	cout << "enter A: ";
+	cin >> A;
+	cout << "enter B: ";
+	cin >> B;
+	cout << "before the swap: A =" << A << ", B =" << B << endl;
+	
+	swap(A,B);
+}
+
+
+#
