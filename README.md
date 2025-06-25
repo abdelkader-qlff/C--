@@ -864,21 +864,21 @@ int main() {
 # Function Parameters - By-Val vs By-Ref:
 #include <iostream>
 using namespace std;
-void swap(int &A, int &B) {
-	int temp = A;
-	A = B;
-	B = temp;
-	cout << "after the swap: A =" << A << ", B =" << B << endl;
+void swap(int &a,int &b){
+	int temp = a;
+	a = b;
+	b = temp;
+	cout << "the values after the swap: a =" << a << " b =" << b << endl;
 }
 int main() {
-	int A, B;
-	cout << "enter A: ";
-	cin >> A;
-	cout << "enter B: ";
-	cin >> B;
-	cout << "before the swap: A =" << A << ", B =" << B << endl;
-	
-	swap(A,B);
+	int a, b;
+	cout << "enter a: ";
+	cin >> a;
+	cout << "enter b: ";
+	cin >> b;
+	cout << "the values befor the swap: a =" << a << " b =" << b << endl;
+	swap(a,b);
+	cout << "the values after calling swap from main: a = " << a << " b = " << b << endl;
 }
 
 
