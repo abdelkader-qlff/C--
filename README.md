@@ -882,4 +882,33 @@ int main() {
 }
 
 
-#
+#Structures and Functions - Re-usability:
+#include <iostream>
+using namespace std;
+struct strinfo {
+	string firstname;
+	string lastname;
+	int age;
+	string phone;
+};
+void readinfo(strinfo &info) {
+	cout << "what is your first name: ";
+	cin >> info.firstname;
+	cout << "waht is your last name: ";
+	cin >> info.lastname;
+	cout << "how old are you: ";
+	cin >> info.age;
+	cout << "give me your phone number: ";
+	cin >> info.phone;
+}
+void printinfo(strinfo info) {
+	cout << "first name: " << info.firstname << endl;
+	cout << "last name: " << info.lastname << endl;
+	cout << "age: " << info.age << endl;
+	cout << "phone number: " << info.phone << endl;
+}
+int main() {
+	strinfo personnelinfo;
+	readinfo(personnelinfo);
+	printinfo(personnelinfo);
+}
