@@ -918,3 +918,50 @@ int main() {
 	readinfo(personnelinfo2);
 	printinfo(personnelinfo2);
 
+
+#homework about the lesson 38:
+#include <iostream>
+using namespace std;
+struct dataliste{
+	string fullname;
+	int age;
+	string city;
+	string country;
+	int monthlysalary;
+	int yearlysalaly;
+	char gender;
+	bool married;
+};
+void readinginfo(dataliste &info) {
+	cout << "what is your name: ";
+	cin >> info.fullname;
+	cout << "enter your age: ";
+	cin >> info.age;
+	cout << "where are you living: ";
+	cin >> info.city;
+	cout << "where are you from: ";
+	cin >> info.country;
+	cout << "enter your Monthly_Salary: ";
+	cin >> info.monthlysalary;
+	cout << "what is your Gender (M or F): ";
+	cin >> info.gender;
+	cout << "are you married? answer with true or false: ";
+	cin >> info.married;
+}
+void printingnifo(dataliste info) {
+	cout << "**********************************" << endl;
+	cout << "Name: " << info.fullname << endl;
+	cout << "Age: " << info.age << " Years old" << endl;
+	cout << "City: " << info.city << endl;
+	cout << "Country: " << info.country << endl;
+	cout << "Monthly_Salary: " << info.monthlysalary << endl;
+	cout << "Yearly salary: " << info.monthlysalary * 12 << endl;
+	cout << "Gender: " << info.gender << endl;
+	cout << "Married: " << info.married << endl;
+	cout << "**********************************" << endl;
+}
+int main() {
+	dataliste infoliste;
+	readinginfo(infoliste);
+	printingnifo(infoliste);
+}
