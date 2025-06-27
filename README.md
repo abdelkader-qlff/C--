@@ -902,13 +902,19 @@ void readinfo(strinfo &info) {
 	cin >> info.phone;
 }
 void printinfo(strinfo info) {
+	cout << "*************************" << endl;
 	cout << "first name: " << info.firstname << endl;
 	cout << "last name: " << info.lastname << endl;
 	cout << "age: " << info.age << endl;
 	cout << "phone number: " << info.phone << endl;
+	cout << "*************************" << endl;
 }
 int main() {
 	strinfo personnelinfo;
 	readinfo(personnelinfo);
 	printinfo(personnelinfo);
-}
+	
+	strinfo personnelinfo2;
+	readinfo(personnelinfo2);
+	printinfo(personnelinfo2);
+
