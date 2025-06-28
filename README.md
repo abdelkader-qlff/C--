@@ -989,7 +989,7 @@ int main() {
 #include <cmath>
 using namespace std;
 int main() {
-	int notes[3];
+	float notes[3];
 	cout << "enter the first mark: ";
 	cin >> notes[0];
 	cout << "enter the second mark: ";
@@ -997,6 +997,6 @@ int main() {
 	cout << "enter the third mark: ";
 	cin >> notes[2];
 	float grade = (notes[0] + notes[1] + notes[2]) / 3;
-	cout << "************************";
+	cout << "************************" << endl;
 	cout << "your grade is: " << grade << endl;
 }
