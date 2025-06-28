@@ -965,3 +965,38 @@ int main() {
 	readinginfo(infoliste);
 	printingnifo(infoliste);
 }
+
+
+#Arrays:
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	string words[5] = { "abdelkader","kadir","imane","moumouch","amine"};
+	cout << words[1] << endl << words[4] << endl;
+
+	int x[3] = { 45,154,2};
+	cout << x[2] + x[0] << endl;
+
+	int x1[2];
+	x1[0] = 10;
+	x1[1] = 25;
+	cout << x1[0] << endl << x1[1];
+}
+
+#homework about arrays:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	int notes[3];
+	cout << "enter the first mark: ";
+	cin >> notes[0];
+	cout << "enter the second mark: ";
+	cin >> notes[1];
+	cout << "enter the third mark: ";
+	cin >> notes[2];
+	float grade = (notes[0] + notes[1] + notes[2]) / 3;
+	cout << "************************";
+	cout << "your grade is: " << grade << endl;
+}
