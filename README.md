@@ -1014,10 +1014,13 @@ void readgrades(float grades[3]) {
 	cin >> grades[2];
 
 }
+float result(float grades[3]) {
+	return (grades[0] + grades[1] + grades[2]) / 3;
+}
 void printgrades(float grades[3]) {
-	float result = (grades[0] + grades[1] + grades[2]) / 3;
+	float result1 = result(grades);
 	cout << "************************" << endl;
-	cout << "your final result: " << result << endl;
+	cout << "your final result: " << result1 << endl;
 }
 int main() {
 	float grades[3];
