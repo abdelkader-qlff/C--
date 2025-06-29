@@ -1000,3 +1000,27 @@ int main() {
 	cout << "************************" << endl;
 	cout << "your grade is: " << grade << endl;
 }
+
+
+#Arrays with Functions:
+#include <iostream>
+using namespace std;
+void readgrades(float grades[3]) {
+	cout << "enter your first note: ";
+	cin >> grades[0];
+	cout << "enter the second note: ";
+	cin >> grades[1];
+	cout << "enter the third note: ";
+	cin >> grades[2];
+
+}
+void printgrades(float grades[3]) {
+	float result = (grades[0] + grades[1] + grades[2]) / 3;
+	cout << "************************" << endl;
+	cout << "your final result: " << result << endl;
+}
+int main() {
+	float grades[3];
+	readgrades(grades);
+	printgrades(grades);
+}
