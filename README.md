@@ -1027,3 +1027,51 @@ int main() {
 	readgrades(grades);
 	printgrades(grades);
 }
+
+#Arrays of Structure:
+#include<iostream>
+using namespace std;
+struct info {
+	string fullname;
+	string familly;
+	int age;
+	bool reponse;
+};
+
+void readinfo(info person[2]) {
+	cout << "enter your full name: ";
+	cin >> person[0].fullname;
+	cout << "enter your familly name: ";
+	cin >> person[0].familly;
+	cout << "what is your age: ";
+	cin >> person[0].age;
+	cout << "are you married (true or false): ";
+	cin >> person[0].reponse;
+
+	person[1].fullname = "abdelkader";
+	person[1].familly = "anane";
+	person[1].age = 17;
+	person[1].reponse = 0;
+}
+
+void printinfo(info person[2]) {
+	cout << "**************************" << endl;
+	cout << "full name: " << person[0].fullname << endl;
+	cout << "familly name: " << person[0].familly << endl;
+	cout << "age: " << person[0].age << endl;
+	cout << "the marital status: " << person[0].reponse << endl;
+	cout << "**************************" << endl;
+
+	cout << "**************************" << endl;
+	cout << "full name: " << person[1].fullname << endl;
+	cout << "familly name: " << person[1].familly << endl;
+	cout << "age: " << person[1].age << endl;
+	cout << "the marital status: " << person[1].reponse << endl;
+	cout << "**************************" << endl;
+}
+
+int main() {
+	info person[2];
+	readinfo(person);
+	printinfo(person);
+}
