@@ -1075,3 +1075,49 @@ int main() {
 	readinfo(person);
 	printinfo(person);
 }
+
+#2:
+#include <iostream>
+using namespace std;
+struct strinfo {
+	string name;
+	string country;
+	int age;
+	char gender;
+};
+void readinfo(strinfo &info) {
+	cout << "what is your name: ";
+	cin >> info.name;
+	cout << "where are you from: ";
+	cin >> info.country;
+	cout << "how old are you: ";
+	cin >> info.age;
+	cout << "what is your gender: ";
+	cin >> info.gender;
+}
+void printinfo(strinfo &info) {
+	cout << "name: " << info.name << endl;
+	cout << "country: " << info.country << endl;
+	cout << "age: " << info.age << endl;
+	cout << "gender: " << info.gender << endl;
+}
+void readinfopesons(strinfo persons[2]) {
+	readinfo(persons[0]);
+	cout << "*************************" << endl;
+	readinfo(persons[1]);
+	cout << "*************************" << endl;
+}
+void printinfopersons(strinfo persons[2]) {
+	printinfo(persons[0]);
+	cout << "*************************" << endl;
+	printinfo(persons[1]);
+}
+
+int main() {
+	strinfo persons[2];
+	readinfopesons(persons);
+	printinfopersons(persons);
+}
+
+
+#
