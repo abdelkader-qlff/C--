@@ -1121,4 +1121,16 @@ int main() {
 
 
 #Lesson #42 - Conditional Statements: IF, IF ... Else Statement
-
+#include <iostream>
+using namespace std;
+int main() {
+	int mark;
+	cout << "enter your mark: ";
+	cin >> mark;
+	if (mark >= 50) {
+		cout << "PASS!" << endl;
+	}
+	else {
+		cout << "FAIL!" << endl;
+	}
+}
