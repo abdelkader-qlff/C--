@@ -1134,3 +1134,40 @@ int main() {
 		cout << "FAIL!" << endl;
 	}
 }
+
+
+#Enums with IF Statements
+#include <iostream>
+using namespace std;
+enum enscreencolor {
+	red = 1, green = 2, blue = 3, yellow = 4};
+int main() {
+	cout << "**********************************************" << endl;
+	cout << "please choose the number of your color:" << endl;
+	cout << "(1) red" << endl;
+	cout << "(2) green" << endl;
+	cout << "(3) blue" << endl;
+	cout << "(4) yellow" << endl;
+	cout << "**********************************************\n" << endl;
+	cout << "what is your choice? " << endl;
+
+	int num;
+	cin >> num;
+	enscreencolor color = (enscreencolor) num;
+
+	if (color == enscreencolor::red) {
+		system("color 4F");
+	}
+	else if (color == enscreencolor::green) {
+		system("color 2F");
+	}
+	else if (color == enscreencolor::blue) {
+		system("color 1F");
+	}
+	else if (color == enscreencolor::yellow) {
+		system("color 6F");
+	}
+	else {
+		system("color 9F");
+	}
+}
