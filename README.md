@@ -1207,3 +1207,59 @@ int main() {
 			cout << "your guess is not a week day!" << endl;
 	}
 }
+
+
+
+#Lesson #46 - Nested Functions with Enums:
+#include <iostream>
+using namespace std;
+enum endays { Sunday =1, Monday, Thuesday, Wednesday, Thursday, Friday, Saturday };
+void liste() {
+	cout << "*************************\n";
+	cout << "\tWeek Days\n";
+	cout << "*************************\n";
+	cout << "1: Sunday\n";
+	cout << "2: Monday\n";
+	cout << "3: Thuesday\n";
+	cout << "4: Wednesday\n";
+	cout << "5: Thursday\n";
+	cout << "6: Friday\n";
+	cout << "7: Saturday\n";
+	cout << "*************************\n";
+	cout << "Please enter the number of the day: ";
+}
+endays readenums() {
+	endays weekdays;
+	int weekday;
+	cin >> weekday;
+	return (endays)weekday;
+}
+string getweekdayname(endays weekdays) {
+	switch (weekdays) {
+	case endays::Sunday:
+		return "Sunday";
+		break;
+	case endays::Monday:
+		return "Monday";
+		break;
+	case endays::Thuesday:
+		return"Thuesday";
+		break;
+	case endays::Wednesday:
+		return "Wednesday";
+		break;
+	case endays::Thursday:
+		return "Thursday";
+		break;
+	case endays::Saturday:
+		return "Saturday";
+		break;
+	case endays::Friday:
+		return "Friday";
+		break;
+	}
+}
+int main() {
+	liste();
+	cout << "today is: " << getweekdayname(readenums()) << endl;
+}
