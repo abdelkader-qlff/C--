@@ -1177,7 +1177,9 @@ int main() {
 #include <iostream>
 using namespace std;
 int main() {
-	int day = 3;
+	int day;
+ 	cout << "cout the your guess about that day number: ";
+  	cin >> day;
 	switch (day) 
 	{
 		case 1:
