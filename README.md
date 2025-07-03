@@ -1263,3 +1263,28 @@ int main() {
 	liste();
 	cout << "today is: " << getweekdayname(readenums()) << endl;
 }
+
+
+#Loops:
+#include <iostream>
+using namespace std;
+
+// دالة لقراءة العدد من المستخدم
+int readnumber() {
+    int N;
+    cout << "Enter your number: ";
+    cin >> N;
+    return N;
+}
+
+// دالة لطباعة الأعداد من 1 إلى N
+void printnumber(int N) {
+    for (int i = 1; i <= N; ++i) {
+        cout << i << endl;
+    }
+}
+
+int main() {
+    int N = readnumber();     // نقرأ العدد من المستخدم
+    printnumber(N);           // نمرره للدالة الثانية لطباعة الأعداد
+}
