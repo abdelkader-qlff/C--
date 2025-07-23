@@ -1288,3 +1288,46 @@ int main() {
     int N = readnumber();     // نقرأ العدد من المستخدم
     printnumber(N);           // نمرره للدالة الثانية لطباعة الأعداد
 }
+
+
+#Lesson #48 - For Loop & Arrays:
+#include <iostream>
+#include <cmath>
+using namespace std;
+void reading(int array[100], int &length) {
+	cout << "enter how much of number do you wanna to count: ";
+	cin >> length;
+	for (int i = 0; i < length; i++) {
+		cout << "please enter number " << i + 1 << endl;
+		cin >> array[i];
+	}
+}
+void printing(int array[100], int length) {
+	cout << "***********************************" << endl;
+	for (int i = 0; i < length; i++) {
+		cout << "number [" << i + 1 << "] : " << array[i] << endl;
+	}
+}
+void sum(int array[100], int length) {
+	int sum = 0;
+	for (int i = 0; i < length; i++) {
+		sum += array[i];
+	}
+	cout << "***********************************" << endl;
+	cout << "sum = " << sum << endl;
+}
+void average(int array[100], int length) {
+	float sum = 0;
+	for (int i = 0; i < length; i++) {
+		sum += array[i];
+	}
+	cout << "average = " << sum / length << endl;
+}
+
+int main() {
+	int array[100], length;
+	reading(array, length);
+	printing(array, length);
+	sum(array, length);
+	average(array, length);
+}
