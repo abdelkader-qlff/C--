@@ -1331,3 +1331,25 @@ int main() {
 	sum(array, length);
 	average(array, length);
 }
+
+
+
+#Lesson 49 - Nested For Loops:
+#include <iostream>
+#include <cmath>
+using namespace std;
+void count(int &i, int &j) {
+
+	for (i = 1; i <= 10; i++) {
+		cout << "i=" << i << endl;
+		for (j = 1; j <= 10; j++) {
+			
+			cout << i << " * " << j << " = " << i * j << endl;
+		}
+		cout << "---------------------------" << endl;
+	}
+}
+int main() {
+	int i, j;
+	count(i, j);
+}
