@@ -1353,3 +1353,19 @@ int main() {
 	int i, j;
 	count(i, j);
 }
+
+
+#Lesson 51 - Do...while loop:
+#include <iostream>
+using namespace std;
+int dowhile(int from, int to) {
+	int number;
+	do {
+		cout << "enter a number between " << from << " and " << to << endl;
+		cin >> number;
+	} while (number < from || number > to);
+	return number;
+}
+int main() {
+	cout << "the number you entered is " << dowhile(18, 30);
+}
