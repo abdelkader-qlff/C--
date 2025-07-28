@@ -1369,3 +1369,22 @@ int dowhile(int from, int to) {
 int main() {
 	cout << "the number you entered is " << dowhile(18, 30);
 }
+
+
+#Lesson #52 - Break Statement:
+#include <iostream>
+using namespace std;
+int main() {
+	int array[10] = { 10,20,44,55,33,22,99,88,77,100 };
+	int search = 99;
+	for (int i = 0; i <= 10; i++) {
+		cout << "we are at place " << i + 1 << endl;
+		if (search == array[i]) {
+			cout << endl << search << " found it at " << i + 1 << endl;
+			break;
+		}
+		
+	}
+}
+
+
