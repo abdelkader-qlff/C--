@@ -1388,3 +1388,17 @@ int main() {
 }
 
 
+#Lesson #53 - Continue Statement:
+#include <iostream>
+using namespace std;
+int main() {
+	int sum = 0;
+	int arr[5] = { 10,20,55,20,10 };
+	for (int i = 0; i <= 4; i++) {
+		if (arr[i] > 50) {
+			continue;
+		}
+		sum += arr[i];
+	}
+	cout << sum;
+}
